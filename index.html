@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Time</title>
+
+	 <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  	crossorigin="anonymous"></script>
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+<body>
+
+	<div class="container">
+
+	<div class="jumbotron jumbotron-fluid">
+  	
+    <h1 class="display-3 text-center">Anytime is Train Time</h1>
+    <p class="lead text-center">Choo Choo Chee Chee</p>
+ 	</div>
+
+
+	<div class="panel panel-default">
+ 	 <!-- Default panel contents -->
+  	<div class="panel-heading">Current Train Schedule</div>
+
+
+	<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Train Name</th>
+      <th scope="col">Destination</th>
+      <th scope="col">Frequency</th>
+      <th scope="col">Next Arrival</th>
+    <!--   <th scope="col">Minutes Away</th> -->
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" id="first-row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  	</tbody>
+	</table>
+
+	</div>
+
+
+
+	<div class="panel panel-default">
+ 	 <!-- Default panel contents -->
+  	<div class="panel-heading">Add Train</div>
+
+
+<form>
+  <div class="form-group" >
+    <label for="exampleInputEmail1">Train Name</label>
+    <input type="text" class="form-control" id="time-button"  aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted"></small>
+  </div>
+  <div class="form-group" >
+    <label for="exampleInputPassword1">Destination</label>
+    <input type="text" class="form-control" id="destination-input" >
+  </div>
+
+    <div class="form-group">
+    <label for="exampleInputPassword1">First Train Time</label>
+    <input type="number" class="form-control" id="first-train-input" >
+  </div>
+
+    <div class="form-group" >
+    <label for="exampleInputPassword1">Frequency</label>
+    <input type="number" class="form-control" id ="frequency-input" >
+</div>
+
+
+
+
+  <button type="submit" id="submitButton" class="btn btn-primary">Submit</button>
+</form>
+
+
+
+	<script type="text/javascript" src ="main.js"></script>
+	</div>
+</div>
+</body>
+</html>
